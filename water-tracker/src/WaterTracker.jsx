@@ -7,6 +7,7 @@ const WaterTracker = () => {
   const [todayDate, setTodayDate] = useState('');
 
   useEffect(() => {
+    debugger;
     // Get today's date
     const today = new Date().toLocaleDateString('en-US', {
       weekday: 'long',
@@ -22,6 +23,7 @@ const WaterTracker = () => {
     const currentDate = new Date().toDateString();
 
     if (savedDate === currentDate && savedConsumption) {
+        debugger;
       setWaterConsumption(parseInt(savedConsumption));
     } else {
       // New day, reset consumption
