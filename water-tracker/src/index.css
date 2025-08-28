@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-blue-50 to-cyan-100 min-h-screen;
+  }
+}
+
+@layer components {
+  .water-button {
+    @apply bg-water-blue-500 hover:bg-water-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+  
+  .water-counter {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-water-blue-800 drop-shadow-lg;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/30 border border-white/20 rounded-2xl shadow-xl;
+  }
+}
