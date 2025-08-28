@@ -23,7 +23,6 @@ const WaterTracker = () => {
     const currentDate = new Date().toDateString();
 
     if (savedDate === currentDate && savedConsumption) {
-        debugger;
       setWaterConsumption(parseInt(savedConsumption));
     } else {
       // New day, reset consumption
