@@ -7,7 +7,6 @@ const WaterTracker = () => {
   const [todayDate, setTodayDate] = useState('');
 
   useEffect(() => {
-    debugger;
     // Get today's date
     const today = new Date().toLocaleDateString('en-US', {
       weekday: 'long',
